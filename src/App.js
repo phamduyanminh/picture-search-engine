@@ -6,7 +6,7 @@ import axios from 'axios'
 
 import SearchBar from './components/SearchBar'
 
-class App extends React.Component() {
+class App extends React.Component{
   onSearchSubmit(term){
     console.log(term)
   }
