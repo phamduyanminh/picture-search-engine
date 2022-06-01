@@ -1,4 +1,6 @@
 import React from 'react';
+import './ImageList.css';
+
 
 const ImageList = (props) => {
     //Rendering each of image in the images object list
@@ -6,7 +8,7 @@ const ImageList = (props) => {
         return <img key={image.id} alt={image.description} src={image.urls.regular}/>
     });
 
-    return <div>{images}</div>
+    return <div className="image-list">{images}</div>
 };
 
 export default ImageList;
