@@ -11,6 +11,7 @@ class App extends React.Component{
   };
 
   onSearchSubmit = async term => {
+    //Fetching the search api data
     const response = await axios.get('https://api.unsplash.com/search/photos', {
         params: { query: term },
         headers: {
@@ -19,6 +20,7 @@ class App extends React.Component{
         }
     });
 
+    //Returning the list of results to images object
     this.setState({
       images: response.data.results
     });
