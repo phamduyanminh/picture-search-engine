@@ -4,6 +4,7 @@ class ImageCard extends React.Component {
     constructor(props) {
         super(props);
         this.state = {spans: 0};
+        //Using React.createRef() for reaching DOM to interact w/ individual element
         this.imageRef = React.createRef();
     }
 

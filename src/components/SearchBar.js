@@ -5,8 +5,10 @@ class SearchBar extends React.Component {
         term: ''
     };
 
+    //For call-back function, always use arrow function to avoid `this` bug
     onFormSubmit = (event) => {
         event.preventDefault();
+        //passing child props to parent
         this.props.userSubmit(this.state.term)
     };
 
